@@ -2,5 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', "@nuxt/ui"]
+  modules: ['@nuxthq/studio', '@nuxt/content', "@nuxt/ui"],
+  // force module initialization on dev env
+  studio: {
+    enabled: true
+  }
 })
